@@ -16,7 +16,7 @@ while [ $i -lt 4 ]
         file_name_adc="$file_name.txt"
         adc=`cat "$SYSFS_ADC_DIR"`
         echo "adc is $adc " 
-        t=`echo $slp \* $i |bc`; 
+        #t=`echo $slp \* $i |bc`; 
 	echo "$t"
 	echo $adc $t  >> $file_name
         sleep 0.5
