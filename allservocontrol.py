@@ -60,8 +60,8 @@ while(1):
                 PWM.start(servo1,s1c,50)
                 PWM.start(servo2,s2c,50)
                 PWM.start(servo3,s3c,50)
-                GPIO.output(relayFill, GPIO.LOW)
-                GPIO.output(relayDrain, GPIO.LOW)
+                GPIO.output(relayFill, GPIO.HIGH)
+                GPIO.output(relayDrain, GPIO.HIGH)
                 cycleNo=input("What cycle do you want to run? ")
         # DRAINING
         else:
