@@ -46,7 +46,7 @@ cycleNo=input("What cycle do you want to run? ")
 while(1):
         # Let's start with the FILTRATION Cycle
         if cycleNo==0:
-		            print ('Filtration cycle activated')
+		print ('Filtration cycle activated')
                 PWM.start(servo2,s2o,50)
                 sleep(delay)
                 PWM.start(servo1,s1c,50)
