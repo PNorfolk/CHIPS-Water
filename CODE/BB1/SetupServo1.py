@@ -1,5 +1,5 @@
 ###############################
-#      Sets up servos 1       #
+#      Sets up servo 1       #
 #   before running maincode   # 
 ###############################
 
