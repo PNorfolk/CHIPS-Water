@@ -8,7 +8,7 @@ from time import sleep
 
 # Set which pins to use
 
-servo3="P9_22"
+servo3="P9_14"
 relayfill="P8_11"
 relaydrain="P8_9"
 
