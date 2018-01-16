@@ -28,7 +28,7 @@ cycleNo=input("What cycle do you want to run? ")
 while(1):
         # Let's start with the FILTRATION Cycle
         if cycleNo==0:
-	            	print ('Filtration cycle activated')
+	        print ('Filtration cycle activated')
                 PWM.start(servo3,s3o,50)
                 GPIO.output(relayFill, GPIO.HIGH)
                 GPIO.output(relayDrain, GPIO.LOW)
