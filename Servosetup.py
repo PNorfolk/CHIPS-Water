@@ -11,15 +11,15 @@ servo1="P9_14"
 servo3="P9_16"
 
 #Setting up servo 1:
-print ("Setting up servo 1: " \n "Setting duty cycle at 8.6.")
+print ("Setting up servo 1: Setting duty cycle at 8.6.")
 PWM.start(servo1,8.6,50)
-input("Press enter when the closed valve is in position...")
+raw_input("Press enter when the closed valve is in position...")
 PWM.start(servo1,10,50)
 
 #Setting up servo 3:
-print ("Setting up servo 3: " \n "Setting duty cycle at 4")
+print ("Setting up servo 3: Setting duty cycle at 4")
 PWM.start(servo3,8.6,50)
-input("Press enter when the open valve is in position...")
+raw_input("Press enter when the open valve is in position...")
 PWM.start(servo3,10,50)
 sleep(1)
 PWM.start(servo3,2,50)
