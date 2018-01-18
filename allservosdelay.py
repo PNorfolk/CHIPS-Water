@@ -23,12 +23,12 @@ relayDrain="P8_9"
 
 # Set the duty cycles required to open(o) and close(c) each servo valve
 
-s1o=3
-s1c=8.6
-s2o=8.6
-s2c=3
-s3o=3
-s3c=8.6
+s1o=2
+s1c=10
+s2o=2
+s2c=10
+s3o=2
+s3c=10
 
 #Setting the delay between valves closing, to ensure current is kept low
 
