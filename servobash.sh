@@ -62,7 +62,7 @@ echo 1720000  > $pwm2/duty_cycle ; echo 1 > $pwm2/enable
 read -p "Press enter when valve 2 is closed and in position... "
 echo $closed > $pwm2/duty_cycle ; sleep 1.0 ; echo open > $pwm2/duty_cycle ; echo 0 > $pwm2/enable
 echo 1720000  > $pwm3/duty_cycle ; echo 1 > $pwm3/enable
-read -p "Press enter when valve 1 is closed and in position... "
+read -p "Press enter when valve 3 is closed and in position... "
 echo $closed > $pwm3/duty_cycle ; echo 0 > $pwm3/enable
 '
 # Big continuous loop of the 4 cycles
