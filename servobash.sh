@@ -77,13 +77,13 @@ do
 		echo "Filtration cycle activated "
 		echo $open > $pwm2/duty_cycle ; echo 1 > $pwm2/enable 
 		sleep 1.0
-		echo 0 > $pwm2/enable
+		echo 0 > $pwm2/enable ; sleep 1.0
 		echo $closed > $pwm1/duty_cycle ; echo 1 > $pwm1/enable
 		sleep 1.0
-		echo 0 > $pwm1/enable 
+		echo 0 > $pwm1/enable ; sleep 1.0 
 		echo $open > $pwm3/duty_cycle ; echo 1 > $pwm3/enable 
 		sleep 1.0
-		echo 0 > $pwm3/enable
+		echo 0 > $pwm3/enable ; sleep 1.0
 		echo "What cycle do you want to run?  "
 		read cycleNo
 
@@ -92,13 +92,13 @@ do
 		echo "Filling cycle activated "
 		echo $open > $pwm1/duty_cycle ; echo 1 > $pwm1/enable 
 		sleep 1.0
-		echo 0 > $pwm1/enable
+		echo 0 > $pwm1/enable ; sleep 1.0
 		echo $closed > $pwm2/duty_cycle ; echo 1 > $pwm2/enable
 		sleep 1.0
-		echo 0 > $pwm2/enable 
+		echo 0 > $pwm2/enable ; sleep 1.0 
 		echo $closed > $pwm3/duty_cycle ; echo 1 > $pwm3/enable 
 		sleep 1.0
-		echo 0 > $pwm3/enable
+		echo 0 > $pwm3/enable ; sleep 1.0
 		echo "What cycle do you want to run?  "
 		read cycleNo
 
@@ -107,13 +107,13 @@ do
 		echo "Measurement cycle activated "
 		echo $closed > $pwm1/duty_cycle ; echo 1 > $pwm1/enable 
 		sleep 1.0
-		echo 0 > $pwm1/enable
+		echo 0 > $pwm1/enable ; sleep 1.0
 		echo $closed > $pwm2/duty_cycle ; echo 1 > $pwm2/enable
 		sleep 1.0
-		echo 0 > $pwm2/enable 
+		echo 0 > $pwm2/enable ; sleep 1.0
 		echo $closed > $pwm3/duty_cycle ; echo 1 > $pwm3/enable 
 		sleep 1.0
-		echo 0 > $pwm3/enable
+		echo 0 > $pwm3/enable ; sleep 1.0
 		echo "What cycle do you want to run?  "
 		read cycleNo
 	
@@ -121,13 +121,13 @@ do
 		echo "Draining cycle activated "
 		echo $open > $pwm3/duty_cycle ; echo 1 > $pwm3/enable 
 		sleep 1.0
-		echo 0 > $pwm3/enable
+		echo 0 > $pwm3/enable ; sleep 1.0
 		echo $closed > $pwm1/duty_cycle ; echo 1 > $pwm1/enable
 		sleep 1.0
-		echo 0 > $pwm1/enable 
+		echo 0 > $pwm1/enable ; sleep 1.0 
 		echo $closed > $pwm2/duty_cycle ; echo 1 > $pwm2/enable 
 		sleep 1.0
-		echo 0 > $pwm2/enable
+		echo 0 > $pwm2/enable ; sleep 1.0
 		echo "What cycle do you want to run?  "
 		read cycleNo
 	fi	
