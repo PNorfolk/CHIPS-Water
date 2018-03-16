@@ -31,9 +31,6 @@ while [ $i -lt 30 ]
           total=$(( $total + $adc ))
         done
 
-        #finds the average from the total voltage read over toAverage times
-        #averages=$total/$toAverage
-
         echo $total $toAverage >> $file_name
         sleep 1.0
         i=$[$i+1]        
