@@ -6,7 +6,7 @@
 ##################################
 
 # This is a script to control all 3 servo 
-# valves accoring to the valve logistics document
+# valves open/close according to the valve logistics document
 
 # Defining the Pins
 
